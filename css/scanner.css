@@ -1,0 +1,160 @@
+.scanner {
+    overflow: hidden;
+    height: 320px;
+    transition: 0.2s;
+    padding: 0 10px;
+}
+
+.scanner h1 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scanner h1 i {
+    font-size: x-large;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.scanner h1 .fa-camera {
+    /* color: #1F75FE; */
+    color: #1560bd;
+}
+
+.scanner h1 .fa-circle-stop {
+    color: crimson;
+    display: none;
+}
+
+
+
+.scanner-form {
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px dashed #777;
+    padding: 20px;
+}
+
+.scanner-form img {
+    max-width: 200px;
+    display: none;
+}
+
+.scanner-form video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.scanner-form .content {
+    /* color: #0283d8; */
+    /* color: #1F75FE; */
+    color: #2D68C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scanner-form .content i {
+    font-size: 4rem;
+}
+
+.scanner-form .content header {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.scanner-form .content span {
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+
+.scanner-form .content button {
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    /* background: #0283d8; */
+    /* background: #1F75FE; */
+    background: #2D68C4;
+    /* background: #1560bd; */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.scanner-details {
+    margin-top: 15px;
+}
+
+.scanner-details textarea {
+    color: #333;
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+}
+
+.scanner-details .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.scanner-details .btn button {
+    height: 50px;
+    width: calc(100% / 2 - 10px);
+    background: #237eb6;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 12px;
+}
+
+/* Active Scanner */
+.scanner.active {
+    height: 550px;
+}
+
+.scanner.active .scanner-form {
+    pointer-events: none;
+}
+
+/* Active Iamge */
+.scanner-form.active-img img {
+    display: block;
+}
+
+.scanner-form.active-img .content,
+.scanner-form.active-img video {
+    display: none;
+}
+
+/* Active Video */
+.scanner-form.active-video video {
+    display: block;
+}
+
+.scanner-form.active-video .content,
+.scanner-form.active-video img {
+    display: none;
+}
+
+.pointerEvents {
+    pointer-events: none;
+}

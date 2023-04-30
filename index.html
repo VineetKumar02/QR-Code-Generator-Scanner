@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For Icon logo -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/generator.css">
+    <link rel="stylesheet" href="./css/scanner.css">
+
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <title>QR Code Lab</title>
+</head>
+
+<body>
+    
+    <div class="hero">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <div class="container">
+        <!-- Nav -->
+        <nav>
+            <button class="nav-gene active">Generator</button>
+            <button class="nav-scan">Scanner</button>
+        </nav>
+        <!-- Generator -->
+        <div class="generator">
+            <h1>QR Code Generator</h1>
+            <p>Paste a url or enter text to create QR code</p>
+
+            <div class="generator-form">
+                <input type="text" placeholder="Enter text or url">
+                <button>Generate QR Code</button>
+            </div>
+
+            <div class="generator-img">
+                <img src="./images/logo.png" alt="qr-code">
+            </div>
+
+            <div class="generator-btn">
+                <button class="btn-link">Download <i class="fa-solid fa-download"></i></button>
+            </div>
+        </div>
+
+        <!-- Scanner -->
+        <div class="scanner" style="display: none;">
+            <h1>
+                QR Code Scanner or Reader
+                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-circle-stop"></i>
+            </h1>
+
+            <form class="scanner-form">
+
+                <img src="./images/logo.png" alt="qr-code">
+                <video></video>
+
+                <div class="content">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <header>Drag & Drop to Upload File</header>
+                    <span>OR</span>
+                    <button>Browse File</button>
+                    <input type="file" accept="image/*" hidden>
+                </div>
+            </form>
+
+            <div class="scanner-details">
+                <textarea disabled></textarea>
+
+                <div class="btn">
+                    <button class="close">Close</button>
+                    <button class="copy">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/generator.js"></script>
+    <script src="./js/scanner.js"></script>
+    <script src="./js/instascan.min.js"></script>
+</body>
+
+</html>
