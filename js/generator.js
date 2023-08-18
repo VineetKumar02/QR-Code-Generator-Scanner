@@ -13,10 +13,10 @@ generateBtn.addEventListener("click", () => {
     // if value is empty -> stop here
     if (!qrValue.trim()) {
         qrInput.classList.add('error');
-        
+
         setTimeout(() => {
             qrInput.classList.remove('error');
-        },800)
+        }, 800)
         return;
     }
 

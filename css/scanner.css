@@ -20,7 +20,6 @@
 }
 
 .scanner h1 .fa-camera {
-    /* color: #1F75FE; */
     color: #1560bd;
 }
 
@@ -54,8 +53,6 @@
 }
 
 .scanner-form .content {
-    /* color: #0283d8; */
-    /* color: #1F75FE; */
     color: #2D68C4;
     display: flex;
     align-items: center;
@@ -84,10 +81,7 @@
     font-weight: 500;
     border: none;
     outline: none;
-    /* background: #0283d8; */
-    /* background: #1F75FE; */
     background: #2D68C4;
-    /* background: #1560bd; */
     color: white;
     border-radius: 5px;
     cursor: pointer;
